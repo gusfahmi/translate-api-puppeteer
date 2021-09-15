@@ -19,5 +19,38 @@ or with async await
 const dataTranslate = await translate(text, countryCode);
 console.log(dataTranslate);
 ```
+ 
 
+or you can try it directly from my online API.
+```
+https://gus-translate-api.herokuapp.com/translate
+```
+make a post request to the URL like below.
+```json
+{"text": "chair", "to": "id"}
+```
+here is the example response of the API
+```json
+{
+"status": "success",
+"translate": "kursi",
+"moreTranslate": [
+{
+"kursi": "chair, seat, position"
+},
+{
+"ketua": "chairman, head, chief, president, chair, elder"
+},
+{
+"pimpinan": "leadership, management, command, direction, guidance, chair"
+},
+{
+"jabatan": "position, office, post, occupation, function, chair"
+},
+{
+"mengetuai": "preside, chair, chairman, moderate"
+}
+]
+}
 
+```
