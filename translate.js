@@ -17,7 +17,10 @@ async function translate(text, to) {
             text = text.substring(0, 5000);
         }
 
-        const browser = await puppeteer.launch();
+        const browser = await puppeteer.launch({
+				headless: true,
+				args: ["--no-sandbox", "--disable-setuid-sandbox"],
+			});
         const page = await browser.newPage();
         await page.setDefaultNavigationTimeout(0);
         await page.goto(`https://translate.google.com?sl=auto&tl=${to.toLowerCase()}`);
