@@ -1,0 +1,18 @@
+{
+  "name": "translate-api",
+  "version": "1.0.0",
+  "description": "Translate API using Puppeteer",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gusfahmi Alghazali",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12",
+    "puppeteer": "^10.2.0"
+  }
+}
