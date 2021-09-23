@@ -31,7 +31,7 @@ async function translate(text, to) {
 
             try {
                 await page.waitForSelector("span[jsname=W297wb]");
-                const element = await page.$("span[jsname=W297wb]");
+                const element = await page.$("textarea.KHxj8b.tL9Q4c");
                 const textTranslated = await page.evaluate(
                     (element) => element.textContent,
                     element
